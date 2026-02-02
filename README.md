@@ -1,2 +1,2 @@
-# Porter-Schhmidt.github.io
+# Porter-Schmidt.github.io
 

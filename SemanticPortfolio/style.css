@@ -1,0 +1,41 @@
+
+        img {
+            width: 300px;
+            height: 350px;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        address {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        header {
+            background-image: url('');
+            background-size: cover;
+        }
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 150px;
+            margin-right: 150px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .text {
+            flex: 1;
+        }
+        .text h2{
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: 120px;
+        }
