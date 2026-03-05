@@ -1,0 +1,90 @@
+html {
+    background-color: #f8f9fa;
+}
+/* Items for vavigation bar */
+header {
+    background-color: #f8f9fa;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0rem 3rem;
+}
+header .title {
+    font-size: 125%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header li {
+    margin: .5em 1em;
+}
+header a {
+    text-decoration: none;
+    color: gray;
+}
+header a:hover {
+    color: darkgray;
+}
+.insta img {
+    width: 40px;
+    height: 40px;
+}
+.insta {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* The intro to my portfolio */
+.hero {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("img/campus.png");
+    background-size: cover;
+    background-position: center; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* position: relative; */
+}
+
+/* Text styling */
+.hero-text {
+    position: relative;  /* keeps it above overlay */
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Body sh*t and the grid */
+body {
+    margin: 0;
+}
