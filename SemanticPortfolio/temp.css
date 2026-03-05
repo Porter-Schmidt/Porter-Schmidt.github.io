@@ -20,7 +20,6 @@ header nav {
 }
 header .title {
     font-size: 125%;
-    font-style: italic;
     font-weight: bold;
     padding: 0;
 }
@@ -64,27 +63,42 @@ header a:hover {
 
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    /* position: relative; */
+    justify-content: right;
 }
 
 /* Text styling */
 .hero-text {
-    position: relative;  /* keeps it above overlay */
-    text-align: center;
+    position: relative;
+    text-align: left;
+    margin-bottom: 2em;
 }
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-right: 3em;
+
 }
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Body sh*t and the grid */
 body {
     margin: 0;
+}
+
+/* Address / Footer items */
+footer {
+    padding: 5px;
+    background-color: lightgray;
+    text-align: center;
+}
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
