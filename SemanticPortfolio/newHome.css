@@ -90,11 +90,6 @@ header a:hover {
 body {
     margin: 0;
 }
-.main-image {
-    width: 50vw;
-    height: 400px;
-    flex-wrap: nowrap;
-}
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,10 +101,8 @@ body {
 }
 .info img {
     grid-area: image;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 .text {
@@ -121,14 +114,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-
+    /* text-align: left; */
     padding: 4rem;
 }
 .section1 {
     background-color: #f1f3f5;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "image text";
 }
 
 .section2 {
@@ -139,20 +129,22 @@ body {
 
 .section3 {
     background-color: #f1f3f5;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "image text";
 }
 .text h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
+    
 }
-
-.text p {
+ .text p { /* Maybe delete */
     max-width: 500px;
     font-size: 1.1rem;
     line-height: 1.6;
 }
-
+.text h2, .text p {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
 
 /* Maybe include this */
 @media (max-width: 800px) {
