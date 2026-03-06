@@ -86,17 +86,99 @@ header a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Body sh*t and the grid */
+/* Body items and the grid */
 body {
     margin: 0;
 }
 .main-image {
-    width: 33.33vw;
+    width: 50vw;
     height: 400px;
     flex-wrap: nowrap;
 }
-main {
+.info {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+    align-items: center;
+
+    /* padding: 4rem; */
+    /* gap: 3rem; */
+}
+.info img {
+    grid-area: image;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.text {
+    grid-area: text;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 4rem;
+}
+.section1 {
+    background-color: #f1f3f5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+}
+
+.section2 {
+    background-color: #e9ecef;
+    grid-template-areas: "text image";
+    grid-template-columns: 1fr 1fr;
+}
+
+.section3 {
+    background-color: #f1f3f5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+}
+.text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Maybe include this */
+@media (max-width: 800px) {
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info img {
+        order: 1;
+    }
+
+    .info .text {
+        order: 2;
+    }
+
+}
+@media (max-width: 900px) {
+
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "text";
+    }
+
 }
 
 
