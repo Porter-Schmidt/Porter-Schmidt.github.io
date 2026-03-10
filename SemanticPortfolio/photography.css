@@ -1,0 +1,141 @@
+html {
+    background-color: #f8f9fa;
+}
+
+/* The intro to the portfolio */
+.hero {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("img/Photography\ Portfolio\ Background.png");
+    background-size: cover;
+    background-position: center; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Text styling */
+.hero-text h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* About Me section */
+.about {
+    background-color: #333333;
+    padding: 6ch;
+    text-align: left;
+    height: 300px;
+    line-height: 25px;
+    color: #F5F5F5;
+    font-size: 18px;
+}
+
+
+/* Body items and the grid */
+body {
+    margin: 0;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+    align-items: center;
+}
+.info img {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.section1 {
+    background-color: #f1f3f5;
+}
+.section2 {
+    background-color: #f1f3f5;
+    grid-template-areas: "text image";
+    grid-template-columns: 1fr 1fr;
+}
+.section3 {
+    background-color: #f1f3f5;
+}
+.text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    
+}
+ .text p {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.text h2, .text p {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* Button items */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+
+/* Maybe include this */
+@media (max-width: 800px) {
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info img {
+        order: 1;
+    }
+
+    .info .text {
+        order: 2;
+    }
+
+}
+@media (max-width: 900px) {
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "text";
+    }
+}
+
+
+/* Address / Footer items */
+footer {
+    padding: 5px;
+    background-color: lightgray;
+    text-align: center;
+}
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

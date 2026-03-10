@@ -145,7 +145,7 @@ body {
     margin-bottom: 1rem;
     
 }
- .text p { /* Maybe delete */
+ .text p {
     max-width: 500px;
     font-size: 1.1rem;
     line-height: 1.6;
