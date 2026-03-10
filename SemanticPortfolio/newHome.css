@@ -1,6 +1,7 @@
 html {
     background-color: #f8f9fa;
 }
+
 /* Items for vavigation bar */
 header {
     background-color: #f8f9fa;
@@ -40,7 +41,7 @@ header a {
     color: gray;
 }
 header a:hover {
-    color: darkgray;
+    color: rgb(239, 159, 123);
 }
 .insta img {
     width: 40px;
@@ -51,6 +52,10 @@ header a:hover {
     display: flex;
     align-items: center;
 }
+.my-name {
+    color: black;
+}
+
 
 
 /* The intro to the portfolio */
@@ -128,7 +133,7 @@ body {
     background-color: #f1f3f5;
 }
 .section2 {
-    background-color: #e9ecef;
+    background-color: #f1f3f5;
     grid-template-areas: "text image";
     grid-template-columns: 1fr 1fr;
 }
@@ -149,6 +154,21 @@ body {
     text-align: left;
     width: 100%;
     max-width: 500px;
+}
+
+
+/* Button items */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, .3);
 }
 
 

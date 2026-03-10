@@ -1,0 +1,16 @@
+.info-exp {
+    display: flex;
+    align-items: flex-start;
+    gap: 150px;
+    margin-right: 150px;
+
+    margin: 25px;
+
+}
+.info-exp img {
+   width: 450px;
+   height: auto; 
+}
+.exp-text {
+    flex: 1;
+}
