@@ -17,6 +17,7 @@ html {
 }
 
 
+/* Body items / Photos */
 /* Text styling */
 .hero-text h1 {
     font-size: 5.5rem;
@@ -25,117 +26,61 @@ html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
 /* About Me section */
-.about {
+.about-photography {
+    display: flex;
     background-color: #333333;
     padding: 6ch;
-    text-align: left;
-    height: 300px;
-    line-height: 25px;
+    height: 350px;
     color: #F5F5F5;
+}
+.about-text-photography {
+    padding: 6ch;
     font-size: 18px;
-}
-
-
-/* Body items and the grid */
-body {
-    margin: 0;
-}
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "image text";
-    align-items: center;
-}
-.info img {
-    grid-area: image;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.text {
-    grid-area: text;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-}
-.section1 {
-    background-color: #f1f3f5;
-}
-.section2 {
-    background-color: #f1f3f5;
-    grid-template-areas: "text image";
-    grid-template-columns: 1fr 1fr;
-}
-.section3 {
-    background-color: #f1f3f5;
-}
-.text h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    
-}
- .text p {
-    max-width: 500px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-.text h2, .text p {
     text-align: left;
+}
+.photography-photo {
+    height: auto;
+    width: 225px;
+}
+
+.photo-section {
+  padding: 50px 10%;
+}
+
+/* Each photo row */
+.photo-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Image styling */
+.photo-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid black
+}
+
+/* Text section */
+.photo-text h2 {
+  margin-bottom: 10px;
+}
+
+.photo-text p {
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .photo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .photo-item img {
     width: 100%;
-    max-width: 500px;
-}
-
-
-/* Button items */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  color: black;
-}
-.button:hover {
-  background-color: rgba(0, 0, 0, .3);
-}
-
-
-/* Maybe include this */
-@media (max-width: 800px) {
-
-    .info {
-        grid-template-columns: 1fr;
-    }
-
-    .info img {
-        order: 1;
-    }
-
-    .info .text {
-        order: 2;
-    }
-
-}
-@media (max-width: 900px) {
-    .info {
-        grid-template-columns: 1fr;
-        grid-template-areas: "image" "text";
-    }
-}
-
-
-/* Address / Footer items */
-footer {
-    padding: 5px;
-    background-color: lightgray;
-    text-align: center;
-}
-address {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    max-width: 400px;
+  }
 }
