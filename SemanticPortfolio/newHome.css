@@ -88,6 +88,17 @@ header a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* About Me section */
+.about {
+    background-color: #333333;
+    padding: 6ch;
+    text-align: left;
+    height: 300px;
+    line-height: 25px;
+    color: #F5F5F5;
+    font-size: 18px;
+}
+
 
 /* Body items and the grid */
 body {
