@@ -1,0 +1,38 @@
+.hobbies {
+  padding: 40px;
+}
+
+.hobby {
+  display: flex;
+  align-items: center;
+
+  margin: 30px auto;
+  padding: 20px;
+
+  border: 2px solid #ccc;
+  border-radius: 8px;
+
+  max-width: 1000px;
+  gap: 30px;
+}
+
+.hobby img {
+  width: 33%;
+  border-radius: 6px;
+}
+
+.hobby-text {
+  width: 67%;
+}
+
+.hobby-text h2 {
+  margin-bottom: 10px;
+}
+.hobby:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.hobby img {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+}
