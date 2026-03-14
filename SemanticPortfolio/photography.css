@@ -1,6 +1,18 @@
 html {
     background-color: #f8f9fa;
 }
+body {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+}
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+p, a, li {
+    font-weight: 400;
+}
 
 /* The intro to the portfolio */
 .hero-photography {
@@ -74,15 +86,28 @@ html {
   line-height: 1.6;
 }
 
-/* Smaller Devices */
-/* @media (max-width: 768px) {
+/* Phone items */
+@media (max-width: 768px) {
+  .hero-text-photography h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about-photography {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+  .photography-photo {
+    width: 100%;
+    max-width: 300px;
+  }
   .photo-item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
-
   .photo-item img {
     width: 100%;
     max-width: 400px;
   }
-} */
+}

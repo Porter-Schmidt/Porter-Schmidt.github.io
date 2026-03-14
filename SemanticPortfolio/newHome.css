@@ -1,6 +1,22 @@
 html {
     background-color: #f8f9fa;
 }
+body {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+}
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+p, a, li {
+    font-weight: 400;
+}
+.active {
+    color: black;
+    font-weight: 600;
+}
 
 /* Items for vavigation bar */
 header {
@@ -85,7 +101,7 @@ header a:hover {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-right: 3em;
-
+    font-weight: 700;
 }
 .hero-text p {
     font-size: 1.5rem;
@@ -172,26 +188,51 @@ body {
 }
 
 
-/* Maybe include this */
-@media (max-width: 800px) {
-
+/* Phone items */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    header ul {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-right: 0;
+    }
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    .about {
+        height: auto;
+        padding: 2rem;
+        font-size: 16px;
+    }
     .info {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "text";
     }
-
-    .info img {
-        order: 1;
+    .text {
+        padding: 2rem;
+        align-items: flex-start;
     }
-
-    .info .text {
-        order: 2;
+    .text h2, .text p {
+        max-width: 100%;
     }
-
-}
-@media (max-width: 900px) {
-    .info {
-        grid-template-columns: 1fr;
-        grid-template-areas: "image" "text";
+    address {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
