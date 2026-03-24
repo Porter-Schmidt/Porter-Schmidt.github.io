@@ -1,0 +1,21 @@
+html {
+    background-color: #f0f4f7;
+}
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+p, a, li {
+    font-weight: 400;
+}
+
+fieldset {
+    border: 2px dashed orange;
+}
+
+.story {
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    padding: 15px;
+}
